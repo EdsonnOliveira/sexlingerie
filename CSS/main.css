@@ -1,0 +1,72 @@
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 20px 0;
+}
+
+.container .title {
+    position: relative;
+    font-size: 32px;
+}
+
+.container .title a {
+    position: absolute;
+    right: 0;
+    font-size: 17px;
+}
+
+/* BANNER */
+.banner {
+    width: calc(100% - 40px);
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.banner div {
+    height: 100%;
+    position: relative;
+}
+
+.banner div span {
+    position: relative;
+}
+
+.banner div span h1 {
+    font-size: 77px;
+}
+
+.banner div span h3 {
+    font-size: 26px;
+}
+
+/* BANNER SIZE */
+.banner.bigger {
+    height: 600px;
+}
+
+.banner.bigger div {
+    width: 50%;
+    max-width: 800px;
+}
+
+/* BANNER COLOR */
+.banner.black {
+    background-color: #292929;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        padding: 0;
+    }
+}

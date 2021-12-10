@@ -1,0 +1,136 @@
+.preview {
+    width: 100%;
+    display: grid;
+}
+
+.preview div {
+    background-repeat: no-repeat;
+}
+
+.preview div.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SIZE */
+.preview.none {
+    height: 100px;
+}
+
+.preview.small {
+    height: 40vh;
+}
+
+.preview.small div.centralize h1 {
+    width:max-content;
+    margin-top: 60px;
+}
+
+.preview.small div.centralize span {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin-top: 50px;
+    display: block;
+}
+
+.preview.small div.centralize span div.row {
+    width: 108px;
+    height: 207px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.preview.small div.centralize span div.row.white {
+    background-color: white;
+}
+
+.preview.big {
+    height: 100vh;
+}
+
+/* COLOR */
+.preview.red {
+    background-color: #EB3237;
+}
+
+/* PREVIEW TEXT */
+.preview .text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview .text.medium {
+    width: 50%;
+}
+
+.preview .text span {
+    width: max-content;
+    height: max-content;
+    position: relative;
+}
+
+.preview div h1 {
+    font-size: 77px;
+}
+
+.preview div h2 {
+    font-size: 64px;
+}
+
+.preview div h4 {
+    font-size: 32px;
+}
+
+.preview div h5 {
+    font-size: 25px;
+}
+
+/* FORM */
+.preview.small div.centralize form {
+    width: 700px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.preview.small div.centralize form input {
+    width: 100%;
+}
+
+@media only screen and (max-width:900px) {
+    .preview.small {
+        height: 20vh;
+        margin-bottom: 70px;
+    }
+    .preview.small div.centralize span div.row {
+        display: none;
+    }
+
+    .preview.small div.centralize span {
+        margin-top: 38px;
+        text-align: center;
+    }
+
+    .preview.small div.centralize span h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .preview.small div.centralize form {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .preview.small div.centralize form {
+        width: 300px;
+    }
+}

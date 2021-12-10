@@ -1,0 +1,113 @@
+/* FONT */
+.txtRoboto {
+    font-family: 'Roboto';
+}
+
+.txtFutura {
+    font-family: 'Futura';
+}
+
+.txtVegan {
+    font-family: 'Vegan';
+}
+
+.txtPalm {
+    font-family: 'Palm';
+}
+
+.txtGotham {
+    font-family: 'Gotham', Verdana;
+}
+
+.txtGotham2 {
+    font-family: 'Gotham2', Verdana;
+}
+
+.txtGotham3 {
+    font-family: 'Gotham3', Verdana;
+}
+
+/* COLOR */
+.txtRed {
+    color: #EB3237;
+}
+
+.txtBlack {
+    color: #292929;
+}
+
+.txtWhite {
+    color: #FFF;
+}
+
+.txtGreen {
+    color: #04911E;
+}
+
+.txtGrey {
+    color: #888888;
+}
+
+/* SIZE */
+.txt17 {
+    font-size: 17px;
+}
+
+/* WEIGHT */
+.txt100 {
+    font-weight: 100;
+}
+
+.txt200 {
+    font-weight: 200;
+}
+
+.txt300 {
+    font-weight: 300;
+}
+
+.txt400 {
+    font-weight: 400;
+}
+
+.txt500 {
+    font-weight: 500;
+}
+
+.txt600 {
+    font-weight: 600;
+}
+
+.txt700 {
+    font-weight: 700;
+}
+
+.txt800 {
+    font-weight: 800;
+}
+
+.txt900 {
+    font-weight: 900;
+}
+
+/* ALIGN */
+.txtLeft {
+    text-align: left;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.txtRight {
+    text-align: right;
+}
+
+/* TYPE */
+.txtNoDecoration {
+    text-decoration: none;
+}
+
+.txtUpper {
+    text-transform: uppercase;
+}

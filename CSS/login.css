@@ -1,0 +1,104 @@
+header div#loginHeader div {
+    top: 35px;
+    right: 20px;
+}
+
+#login {
+    width: 80%;
+    height: max-content;
+    margin:0 auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+#login h1 {
+    font-size: 42px;
+}
+
+#login #entrar {
+    width: 50%;
+    height: 100%;
+}
+
+#login #entrar form {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#login #entrar form label {
+    padding-bottom: 30px;
+}
+
+#login #entrar form label h3 {
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+#login #entrar form input[type='text'], #login #entrar form input[type='password'] {
+    width: 350px;
+}
+
+#login #entrar form input[type='submit'] {
+    width: 250px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#login #cadastrar {
+    width: 50%;
+    height: 100%;
+}
+
+#login #cadastrar center {
+    margin-top: 50px;
+}
+
+#login #cadastrar a {
+    width: 200px;
+    padding-top: 20px;
+    position: relative;
+}
+
+#login #cadastrar a img {
+    width: 25px;
+    position: absolute;
+    top: 17px;
+    left: 25px;
+}
+
+#login #cadastrar a#btGoogle {
+    padding: 22px 60px 17px 60px;
+}
+
+#login #cadastrar a#btFacebook {
+    padding: 22px 50px 17px 50px;
+}
+
+@media screen and (max-width:900px) {
+    #login {
+        width: calc(100% - 20px);
+        padding: 0 20px;
+        display: block;
+        margin-top: -60px;
+    }
+
+    #login #entrar, #login #cadastrar {
+        width: 100%;
+        margin-left:-10px;
+        padding-bottom: 20px;
+    }
+
+    #login #entrar form input[type='text'], #login #entrar form input[type='password'] {
+        width: 300px;
+    }
+
+    #login #cadastrar h1 {
+        display: none;
+    }
+
+    #login #cadastrar center {
+        margin-top: 10px;
+    }
+}

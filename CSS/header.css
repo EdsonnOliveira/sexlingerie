@@ -1,0 +1,194 @@
+header {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas: 'logo menu sex login';
+    grid-template-columns: 14.5vw 37vw 30.5vw auto;
+    position: absolute;
+    z-index: 999;
+}
+
+header a img[alt='Logo'] {
+    width: 241px;
+    padding: 15px 30px 10px 15px;
+    grid-area: logo;
+    background-color: #292929;
+}
+
+header nav {
+    width: max-content;
+    padding-right: 20px;
+    height: 100px;
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    background-color: #292929;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline;
+    font-family: 'Roboto';
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #EB3237;
+    font-family: 'Roboto';
+    padding: 10px;
+}
+
+header div#sex {
+    grid-area: sex;
+}
+
+header div {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+header div div {
+    width: max-content;
+    position: absolute;
+    top:22px;
+    right: 30px;
+}
+
+header div#sex div a {
+    margin-top: 5px;
+    float: right;
+    letter-spacing: 1px;
+}
+
+header div#loginHeader {
+    grid-area: login;
+}
+
+header div#loginHeader a[href='sexshop.php'] {
+    width: 100.8px;
+    position: absolute;
+    top: -5px;
+    right: 150px;
+}
+
+header div#loginHeader div a {
+    font-size:18px;
+    letter-spacing:2px;
+    position: absolute;
+    top:0;
+    right:15px;
+}
+
+header div#loginHeader div img {
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+header div#loginHeader div img[alt='Login'] {
+    width: 32px;
+    right: 45px;
+    top: 2px;
+}
+
+header div#loginHeader div img[alt='Search'] {
+    width: 45px;
+    right: 80px;
+    top: -5px;
+}
+
+header div#headerMobile {
+    width: 50px;
+    height: 50px;
+    display: none;
+    margin-top: 25px;
+    border-radius: 7px;
+    left: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header div#headerMobile img {
+    width: 40px;
+}
+
+header div#headerClick {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: #292929;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.40s;
+    display: flex;
+    justify-content: center;
+}
+
+header div#headerClick nav {
+    position: absolute;
+    padding: 0;
+    height: max-content;
+    top: 0;
+}
+
+header div#headerClick nav ul li {
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+
+header div#headerClick nav ul li a {
+    padding: 10px;
+}
+
+header div#headerBag {
+    width: 50px;
+    height: 50px;
+    display: none;
+    margin-top: 25px;
+    position: absolute;
+    right: 40px;
+}
+
+header div#headerBag a img {
+    width: 35px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 100vw;
+        background-color: #292929;
+        display: flex;
+    }
+
+    header a img[alt='Logo'] {
+        width: 170px;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header #loginHeader {
+        display: none;
+    }
+
+    header div#headerMobile, header div#headerBag {
+        display: flex;
+    }
+
+    div#headerClick nav {
+        display: flex;
+    }
+}

@@ -1,0 +1,46 @@
+header div#loginHeader div {
+    top: 35px;
+    right: 20px;
+}
+
+.container {
+    /* margin-top: -50px; */
+}
+
+.container form h1 {
+    margin-bottom: 15px;
+}
+
+.container form div {
+    display:flex;
+    margin-bottom: 10px;
+}
+
+.container form div label {
+    width: max-content;
+    height: max-content;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container form div label h3 {
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width:900px) {
+    .container form div {
+        display: block;
+    }
+
+    .container form div label {
+        margin: 0;
+    }
+
+    .container form div label input, .container form div label select {
+        margin-bottom: 10px;
+    }
+
+    .container form input[type='submit'] {
+        margin-top: -30px;
+    }
+}

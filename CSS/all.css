@@ -1,0 +1,36 @@
+* {
+    font-family: 'Croissant One', cursive;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../Font/futur.ttf')
+}
+
+@font-face {
+    font-family: 'Vegan';
+    src: url('../Font/VeganStylePersonalUse-5Y58.ttf')
+}
+
+@font-face {
+    font-family: 'Palm';
+    src: url('../Font/PalmBeach.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../Font/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: 'Gotham2';
+    src: url('../Font/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Gotham3';
+    src: url('../Font/Gotham-Medium.otf');
+}

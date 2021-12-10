@@ -1,0 +1,108 @@
+footer div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NOVIDADES */
+footer div#novidades {
+    height: 216px;
+    padding:30px 0 30px 0;
+}
+
+footer div h1 {
+    font-size: 53px;
+}
+
+footer div#novidades form {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+}
+
+footer div#novidades form input[type='email'] {
+    margin-right: 15px;
+}
+
+/* INSTAGRAM */
+footer div#instagram {
+    height: 348px;
+    background-color: #E9E9E9;
+}
+
+footer div#instagram section div.row {
+    height: 12px;
+    background-color: #EB3237;
+    margin: 20px 0 20px 0;
+}
+
+/* COPY */
+footer div#copy {
+    height: 326px;
+    background-color: white;
+}
+
+footer div#copy img[alt='Logo Footer'] {
+    width: 353px;
+}
+
+footer section a img[alt='WhatsApp Footer'] {
+    width: 46px;
+    padding-top: 5px;
+}
+
+footer section a img[alt='Facebook Footer'], footer section a img[alt='Instagram Footer'] {
+    width: 35px;
+    margin-right: 5px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 900px) {
+    footer div h1 {
+        font-size: 45px;
+    }
+
+    footer div#instagram {
+        height: 248px;
+    }
+
+    footer div#copy img[alt='Logo Footer'] {
+        width: 253px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer div h1 {
+        font-size: 30px;
+    }
+
+    footer div#instagram {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer div h1 {
+        font-size: 20px;
+    }
+
+    footer div#novidades h1 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    footer div#novidades form {
+        display: block;
+    }
+
+    footer div#novidades form input[type='email'] {
+        margin-bottom: 20px;
+    }
+
+    footer div#novidades form input[type='submit'] {
+        margin: auto;
+        display: flex;
+    }
+}

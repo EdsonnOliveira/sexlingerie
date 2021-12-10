@@ -1,0 +1,77 @@
+.button {
+    text-decoration: none;
+    transition: 0.30s;
+    border: 0;
+    cursor: pointer;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* TYPE */
+.button.btRounded {
+    border-radius: 50px;
+}
+
+.button.btBorder {
+    border:2px solid #292929;
+    background: none;
+}
+
+/* BORDER COLOR */
+.button.btBorderWhite {
+    border-color: white;
+}
+
+/* COLOR */
+.button.btWhite {
+    background-color: white;
+}
+
+.button.btWhite:hover {
+    background-color: #E8E8E8;
+}
+
+.button.btBlack {
+    background-color: #292929;
+}
+
+.button.btBlack:hover {
+    background-color: #1C1C1C;
+}
+
+.button.btRed {
+    background-color: #EB3237;
+}
+
+.button.btRed:hover {
+    background-color: #C71B20;
+}
+
+.button.btGrey {
+    background-color: #E9E9E9;
+}
+
+/* SIZE */
+.button.btSmall {
+    padding: 10px 15px 10px 15px;
+}
+
+.button.btNormal {
+    padding: 10px 30px 10px 30px;
+}
+
+.button.btBig {
+    padding: 12px 45px 12px 45px;
+}
+
+.button.btBigger {
+    padding: 20px 45px 20px 45px;
+}
+
+@media screen and (max-width:900px) {
+    .button.btBigger {
+        padding: 20px 30px 20px 30px;
+    }
+}

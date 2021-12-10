@@ -1,0 +1,265 @@
+.preview {
+    grid-template-areas:
+        'header header right'
+        'left bottom right';
+    grid-template-columns: 41vw 41vw;
+    grid-template-rows: 63vh;
+    
+}
+
+/* HEADER */
+.preview #header {
+    grid-area: header;
+    background-color: #EB3237;
+    position: relative;
+    background-image: url('../IMG/Index/layer1.png');
+    background-position: 38vw 20px;
+    background-size: 650px;
+}
+
+.preview .text span h1 {
+    position: absolute;
+    top: -65px;
+    left: 40px;
+    width: 700px;
+}
+
+#rowWhite {
+    width: 619px;
+    height: 106px;
+    background-color: white;
+}
+
+.preview .text span h4 {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    font-weight: 500;
+}
+
+#social {
+    width: 50px;
+    height: 130px;
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+}
+
+#social a img {
+    margin-bottom: 5px;
+}
+
+#social a img[alt='Whatsapp'] {
+    width: 40px;
+}
+
+#social a img[alt='Facebook'] {
+    width: 35px;
+}
+
+#social a img[alt='Instagram'] {
+    width: 35px;
+}
+
+/* LEFT */
+
+.preview #left {
+    grid-area: left;
+    background-color: #292929;
+    background-image: url('../IMG/Index/layer2.png');
+    background-position: -120px 25px;
+    background-size: 450px;
+    position: relative;
+}
+
+.preview #left h4 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.preview #left span {
+    width: 108px;
+    height: 207px;
+    position: absolute;
+    top: 80px;
+    right: 250px; 
+    background-color: #EB3237;
+}
+
+.preview #left a {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* BOTTOM */
+
+.preview #bottom {
+    grid-area: bottom;
+    background-color: #E9E9E9;
+    background-image: url('../IMG/Index/layer3.png');
+    background-position: right -52px;
+    background-size: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview #bottom span {
+    margin-left: -300px;
+}
+
+/* RIGHT */
+
+.preview #right {
+    grid-area: right;
+    background-color: #F9F9F9;
+    background-image: url('../IMG/Index/layer4.png');
+    background-position: 0px bottom;
+    background-size: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.preview #right span {
+    position: absolute;
+    top: 150px
+}
+
+/* BANNER */
+.banner div img {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.banner div img[alt='banner2']{
+    width: 285px;
+}
+
+.banner div#img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner div#row {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: -30px;
+    left: 230px;
+    background-color: #EB3237;
+}
+
+.banner div#txt span#spnTitle {
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.banner div#txt span#spnDescription {
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    right: 0;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1430px) {
+    .preview {
+        grid-template-areas:
+            'header header right'
+            'left bottom right';
+        grid-template-columns: 39vw 39vw;
+        grid-template-rows: 63vh;
+    }
+
+    .preview #left span {
+        right: 200px;
+    }
+
+    #right span h5 {
+        width: 200px;
+    }
+
+    #right span h2 {
+        font-size: 54px;
+    }
+
+    .banner div img {
+        width: 300px;
+        margin-right: 10px;
+    }
+    
+    .banner div img[alt='banner2']{
+        width: 243px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .preview .text span {
+        left: 100px
+    }
+
+    .banner div img {
+        width: 250px;
+        margin-right: 5px;
+    }
+    
+    .banner div img[alt='banner2']{
+        width: 203px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .preview {
+        grid-template-areas:
+            'header header'
+            'left bottom';
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 63vh;
+    }
+
+    .preview #right {
+        display: none;
+    }
+
+    .banner div#img {
+        display: none;
+    }
+    
+    .banner div#txt {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .preview.big {
+        height: 100px;
+    }
+    .preview #header{
+        display: none;
+    }
+
+    .preview #left {
+        display: none;
+    }
+
+    .preview #bottom {
+        display: none;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .container .title {
+        font-size: 22px;
+    }
+    
+    .container .title a {
+        font-size: 15px;
+    }    
+}
